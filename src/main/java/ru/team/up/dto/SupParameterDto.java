@@ -18,11 +18,6 @@ public class SupParameterDto<T> {
     private String parameterName;
 
     /**
-     * Тип параметра
-     */
-    private T parameterType;
-
-    /**
      * Имя модуля приложения, которому посылаются парамтеры.
      */
     private AppModuleNameDto systemName;
