@@ -3,8 +3,6 @@ package ru.team.up.dto;
 import lombok.Builder;
 import lombok.Data;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 /**
  * @author Степан Глущенко
@@ -33,14 +31,4 @@ public class SupParameterDto<T> {
      * Значение парамтера.
      */
     private T parameterValue;
-
-    /**
-     * Дата создания параметра.
-     */
-    private LocalDate creationDate;
-
-    /**
-     * Дата и время последнего обновления парамтера.
-     */
-    private LocalDateTime updateDate;
 }
