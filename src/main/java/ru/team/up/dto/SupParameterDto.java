@@ -1,5 +1,8 @@
 package ru.team.up.dto;
 
+import lombok.Builder;
+import lombok.Data;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -8,6 +11,8 @@ import java.time.LocalDateTime;
  * Сущность для передачи параметров в другие модули приложения, система Sup.
  */
 
+@Data
+@Builder
 public class SupParameterDto<T> {
     /**
      * Имя параметар
