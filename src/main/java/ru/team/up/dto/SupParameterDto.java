@@ -27,7 +27,7 @@ public class SupParameterDto<T> {
     /**
      * Имя модуля приложения, которому посылаются парамтеры.
      */
-    private AppModuleName systemName;
+    private AppModuleNameDto systemName;
 
     /**
      * Значение парамтера.

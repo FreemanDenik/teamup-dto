@@ -5,7 +5,7 @@ package ru.team.up.dto;
  * Имена модулей приложения, которые будут принимать парамтеры от системы SUP.
  */
 
-public enum AppModuleName {
+public enum AppModuleNameDto {
     TEAMUP_APP,
     TEAMUP_AUTH,
     TEAMUP_CORE,
