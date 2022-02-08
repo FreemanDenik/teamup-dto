@@ -19,21 +19,11 @@ public class InterestsDto {
     /**
      * Название
      */
-      private String title;
+    private String title;
 
     /**
      * Краткое описание
      */
     private String shortDescription;
-
-    /**
-     * Пользователи
-     */
-    private Set<UserDto> users;
-
-    /**
-     * Мероприятия, для которых проявляется интерес
-     */
-    private Set<EventDto> event;
 
 }
