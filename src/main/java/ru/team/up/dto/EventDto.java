@@ -45,20 +45,19 @@ public class EventDto {
     private Boolean eventPrivacy;
 
     /**
-     * Участники мероприятия
+     * Количество участников
      */
-    private Set<UserDto> participantsEvent;
+    private Long eventNumberOfParticipant;
 
     /**
      * Тип мероприятия
      */
-    private String eventType;
+    private EventTypeDto eventType;
 
     /**
      * Создатель мероприятия
      */
-    private UserDto authorId;
-
+    private Long authorId;
 
     /**
      * С какими интересами связанно мероприятие
@@ -68,5 +67,5 @@ public class EventDto {
     /**
      * Статус мероприятия (модерация, доступно и т.д.)
      */
-    private String status;
+    private StatusDto status;
 }
