@@ -21,7 +21,7 @@ public class ReportDto {
     /**
      * Статус события (Успешно, Неуспешно)
      */
-    Status status;
+    StatusDto status;
 
     /**
      * Список дополнительных параметров
