@@ -14,7 +14,7 @@ public class EventReviewDto {
     /**
      * Первичный ключ
      */
-    private Long reviewId;
+    private Long id;
 
     /**
      * Пользователь оставивший отзыв
@@ -24,20 +24,20 @@ public class EventReviewDto {
     /**
      * Отзыв
      */
-    private String reviewMessage;
+    private String message;
 
     /**
      * Для какого мероприятия оставлен отзыв
      */
-    private EventDto reviewForEvent;
+    private EventDto eventId;
 
     /**
      * Время составления отзыва
      */
-    private LocalDateTime reviewTime;
+    private LocalDateTime time;
 
     /**
      * Оценка мероприятия
      */
-    private Integer eventGrade;
+    private Long eventGrade;
 }

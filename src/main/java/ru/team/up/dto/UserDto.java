@@ -8,6 +8,7 @@ import java.util.Set;
 
 @Data
 @SuperBuilder
+@NoArgsConstructor
 public class UserDto extends AccountDto{
 
     /**
@@ -18,7 +19,7 @@ public class UserDto extends AccountDto{
     /**
      * Возраст
      */
-    private LocalDate dateOfBirth;
+    private Long age;
 
     /**
      * Информация о пользователе
@@ -30,19 +31,4 @@ public class UserDto extends AccountDto{
      */
     private Set<InterestsDto> userInterests;
 
-    /**
-     * Подписчики пользователя
-     */
-    private Set<UserDto> subscribers;
-
-
-    /**
-     * Мероприятия в которых участвует пользователь
-     */
-    private Set<EventDto>  userEvent;
-
-    /**
-     * Сообщения пользователя
-     */
-    private Set<UserMessageDto>  userMessages;
 }
