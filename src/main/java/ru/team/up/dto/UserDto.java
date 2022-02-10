@@ -1,13 +1,10 @@
 package ru.team.up.dto;
 
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 import java.util.Set;
-
-
 
 @Data
 @SuperBuilder
