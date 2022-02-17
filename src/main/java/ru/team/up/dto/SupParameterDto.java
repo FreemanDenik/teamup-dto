@@ -1,7 +1,11 @@
 package ru.team.up.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 
 /**
@@ -10,6 +14,8 @@ import lombok.Data;
  */
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class SupParameterDto<T> {
     /**
@@ -18,7 +24,7 @@ public class SupParameterDto<T> {
     private String parameterName;
 
     /**
-     * Имя модуля приложения, которому посылаются парамтеры.
+     * Имя модуля приложения, которому посылаются параметры.
      */
     private AppModuleNameDto systemName;
 
@@ -26,4 +32,14 @@ public class SupParameterDto<T> {
      * Значение парамтера.
      */
     private T parameterValue;
+
+    /**
+     * Время последнего обновления параметра.
+     */
+    private LocalDateTime updateTime;
+
+    /**
+     * Удален параметр или отключен (т.к. в кафке нельзя удалить сообщение).
+     */
+    private boolean isDeleted;
 }
