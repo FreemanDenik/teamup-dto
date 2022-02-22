@@ -34,6 +34,11 @@ public class EventDto {
     private String placeEvent;
 
     /**
+     * Город проведения
+     */
+    private String city;
+
+    /**
      * Время проведения мероприятия
      */
     private LocalDateTime timeEvent;
@@ -47,7 +52,7 @@ public class EventDto {
     /**
      * Количество участников
      */
-    private Long eventNumberOfParticipant;
+    private Long participantsCount;
 
     /**
      * Тип мероприятия
@@ -68,4 +73,9 @@ public class EventDto {
      * Статус мероприятия (модерация, доступно и т.д.)
      */
     private StatusDto status;
+
+    /**
+     * Минимальный возраст
+     */
+    private Byte minYear;
 }
