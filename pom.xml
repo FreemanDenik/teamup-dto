@@ -20,10 +20,6 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
             <version>3.3.0</version>
@@ -33,11 +29,6 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-mongodb</artifactId>
-            <version>3.3.0</version>
         </dependency>
     </dependencies>
 </project>
