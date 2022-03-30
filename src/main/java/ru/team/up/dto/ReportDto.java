@@ -25,6 +25,11 @@ public class ReportDto {
     ControlDto control;
 
     /**
+     * Название события
+     */
+    String reportName;
+
+    /**
      * Модуль из которого отправлено событие
      */
     AppModuleNameDto appModuleName;
@@ -52,7 +57,7 @@ public class ReportDto {
     /**
      * Статус события (Успешно, Неуспешно)
      */
-    StatusDto status;
+    ReportStatusDto reportStatus;
 
     /**
      * Список дополнительных параметров
