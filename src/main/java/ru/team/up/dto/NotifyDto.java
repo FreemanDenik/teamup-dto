@@ -15,15 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class NotificationDto {
-
-    /**
-     * Статус уведомления
-     */
-    public static enum Status {
-        NOT_SENT,
-        SENT;
-    }
+public class NotifyDto {
 
     /**
      * Уникальный идентификатор, генерится самой базой
@@ -48,7 +40,7 @@ public class NotificationDto {
     /**
      * Статус уведомления
      */
-    private Status status;
+    private NotifyStatusDto status;
 
     /**
      * Время создания уведомления
