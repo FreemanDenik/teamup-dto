@@ -1,27 +1,63 @@
 package ru.team.up.dto;
 
-import lombok.Builder;
-import lombok.Value;
+import lombok.*;
 
+import java.util.Date;
 import java.util.Map;
 
 
 /**
  * Сущность событие для Кафки
  */
-@Value
+@Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ReportDto {
+    /**
+     * ID
+     */
+    String id;
 
     /**
      * Тип события (Ручное, Автоматическое)
      */
-    ControlDto controlDto;
+    ControlDto control;
+
+    /**
+     * Название события
+     */
+    String reportName;
+
+    /**
+     * Модуль из которого отправлено событие
+     */
+    AppModuleNameDto appModuleName;
+
+    /**
+     * Инициатор события (Система, Пользователь, Менеджер, Администратор)
+     */
+    InitiatorTypeDto initiatorType;
+
+    /**
+     * Имя инициатора события
+     */
+    String initiatorName;
+
+    /**
+     * ID инициатора события
+     */
+    Long initiatorId;
+
+    /**
+     * Время создания события
+     */
+    Date time;
 
     /**
      * Статус события (Успешно, Неуспешно)
      */
-    StatusDto status;
+    ReportStatusDto reportStatus;
 
     /**
      * Список дополнительных параметров
