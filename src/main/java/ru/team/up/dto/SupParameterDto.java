@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 
 
 /**
- * @author Степан Глущенко
  * Сущность для передачи параметров в другие модули приложения, система Sup.
  */
 
@@ -19,27 +18,27 @@ import java.time.LocalDateTime;
 @Builder
 public class SupParameterDto<T> {
     /**
-     * Имя параметар
+     * Имя параметра
      */
     private String parameterName;
 
     /**
-     * Имя модуля приложения, которому посылаются параметры.
-     */
-    private AppModuleNameDto systemName;
-
-    /**
-     * Значение парамтера.
+     * Значение параметра
      */
     private T parameterValue;
+
+    /**
+     * Тип передаваемого параметра
+     */
+    private SupParameterTypeDto parameterType;
+
+    /**
+     * Имя модуля приложения, которому предназначен данный параметр.
+     */
+    private AppModuleNameDto systemName;
 
     /**
      * Время последнего обновления параметра.
      */
     private LocalDateTime updateTime;
-
-    /**
-     * Удален параметр или отключен (т.к. в кафке нельзя удалить сообщение).
-     */
-    private boolean isDeleted;
 }
