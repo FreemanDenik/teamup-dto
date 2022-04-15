@@ -43,6 +43,10 @@ public class EventDto {
      */
     private LocalDateTime timeEvent;
 
+    /**
+     * Время окончания мероприятия
+     */
+    private LocalDateTime timeEndEvent;
 
     /**
      * Приватность мероприятия
