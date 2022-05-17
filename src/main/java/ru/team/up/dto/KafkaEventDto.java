@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import ru.team.up.payload.Payload;
 
 /**
  * Класс для передачи данных о событиях в Kafka и считывания из Kafka
@@ -20,6 +21,8 @@ public class KafkaEventDto {
     */
     private KafkaEventTypeDto kafkaEventTypeDto;
 
-    //TODO Добавить поля
-
+    /**
+     * Содержимое события
+     */
+    private Payload payload;
 }
