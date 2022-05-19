@@ -1,6 +1,6 @@
 package ru.team.up.dto;
 
-public enum SupParameterTypeDto {
+public enum SupParameterType {
     STRING,
     INTEGER,
     DOUBLE,
