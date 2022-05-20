@@ -30,7 +30,7 @@ public class SupParameterDto<T> {
     /**
      * Тип передаваемого параметра
      */
-    private SupParameterTypeDto parameterType;
+    private SupParameterType parameterType;
 
     /**
      * Имя модуля приложения, которому предназначен данный параметр.
