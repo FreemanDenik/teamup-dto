@@ -12,6 +12,6 @@ public class ParametersDto {
 
     @Override
     public String toString() {
-        return "" + description + '\'' +value;
+        return " " + description + value;
     }
 }
