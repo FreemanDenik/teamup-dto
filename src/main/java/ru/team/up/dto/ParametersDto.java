@@ -1,22 +1,14 @@
 package ru.team.up.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString(includeFieldNames = false)
 public class ParametersDto {
     private String description;
     private Object value;
-
-    @Override
-    public String toString() {
-        return " " + description + '\'' +
-                "" + value;
-    }
 
 }
