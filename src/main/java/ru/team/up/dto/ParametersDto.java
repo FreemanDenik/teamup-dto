@@ -6,9 +6,12 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(includeFieldNames = false)
 public class ParametersDto {
     private String description;
     private Object value;
 
+    @Override
+    public String toString() {
+        return "" + description + '\'' +value;
+    }
 }
