@@ -62,5 +62,5 @@ public class ReportDto {
     /**
      * Список дополнительных параметров
      */
-    Map<String, Object> parameters;
+    Map<String, ParametersDto> parameters;
 }
