@@ -59,6 +59,11 @@ public class EventDto {
     private Long participantsCount;
 
     /**
+     * Количество просмотров мероприятия
+     */
+    private Long countViewEvent;
+
+    /**
      * Тип мероприятия
      */
     private EventTypeDto eventType;
