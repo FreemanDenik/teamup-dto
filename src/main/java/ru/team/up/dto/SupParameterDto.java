@@ -28,6 +28,11 @@ public class SupParameterDto<T> {
     private T parameterValue;
 
     /**
+     * Значение параметра isList определяющее множество параметров при isList = true и один параметр если isList = false
+     */
+    private Boolean isList;
+
+    /**
      * Тип передаваемого параметра
      */
     private SupParameterType parameterType;
